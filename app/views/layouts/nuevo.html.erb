@@ -1,15 +1,12 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ejercicio1</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <title>asd</title>
   </head>
-
-  <body class="<% params[:controller] %>">
-    <nav class="navbar navbar-default">
+  <body>
+    <nav class="navbar navbar-default" background-color="red">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -26,14 +23,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="<%= root_path %>">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="<%= pages_about_path %>">About</a></li>
-        <li><a href="<%= products_path %>">Productos</a></li>
       </ul>
-    </div>
+    </div><!-- /.container-fluid -->
 </nav>
-
-    <div class="container">
-    <%= yield %>
-  </div>
   </body>
 </html>
